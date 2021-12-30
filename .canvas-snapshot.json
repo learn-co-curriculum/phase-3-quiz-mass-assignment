@@ -1,10 +1,10 @@
 {
   "quiz": {
     "id": 19085,
-    "title": "Metaprogramming Quiz",
+    "title": "Mass Assignment Quiz",
     "html_url": "https://learning.flatironschool.com/courses/3299/quizzes/19085",
     "mobile_url": "https://learning.flatironschool.com/courses/3299/quizzes/19085?force_user=1&persist_headless=1",
-    "description": "<div id=\"git-data-element\" data-org=\"learn-co-curriculum\" data-repo=\"phase-3-quiz-mass-assignment\"></div>\n<header class=\"fis-header\"><a class=\"fis-git-link\" href=\"https://github.com/learn-co-curriculum/phase-3-quiz-mass-assignment/issues/new\" target=\"_blank\"><img id=\"issue-img\" title=\"Create New Issue\" alt=\"Create New Issue\"></a></header>\n<p>It's time to check your knowledge! Use this quiz to create a custom study guide. Note any answers that were marked incorrect, so you can study the relevant material and try this quiz again.</p>\n<p>If you don't know the answer to a question, please do not guess. Instead, select \"I don't know\". It's OK not to know everything and to admit when we're unsure.</p>",
+    "description": "<div id=\"git-data-element\" data-org=\"learn-co-curriculum\" data-repo=\"phase-3-quiz-mass-assignment\"></div>\n<header class=\"fis-header\">\n  <a class=\"fis-git-link\" href=\"https://github.com/learn-co-curriculum/phase-3-quiz-mass-assignment/issues/new\" target=\"_blank\"><img id=\"issue-img\" title=\"Create New Issue\" alt=\"Create New Issue\"></a>\n</header>\n\n<p>It's time to check your knowledge! Use this quiz to create a custom study guide.\nNote any answers that were marked incorrect, so you can study the relevant\nmaterial and try this quiz again.</p>\n\n<p>If you don't know the answer to a question, please do not guess. Instead, select\n\"I don't know\". It's OK not to know everything and to admit when we're unsure.</p>",
     "quiz_type": "assignment",
     "time_limit": null,
     "timer_autosubmit_disabled": false,
@@ -71,7 +71,7 @@
     "only_visible_to_overrides": false,
     "assignment_group_id": 9648,
     "show_correct_answers_last_attempt": true,
-    "version_number": 6,
+    "version_number": 7,
     "has_access_code": false,
     "post_to_sis": false,
     "migration_id": "gb10d37a7c1b2a9ec1a090650a38b8eb5",
@@ -367,7 +367,7 @@
       "position": null,
       "question_name": "Mass Assignment: Class Initialization",
       "question_type": "true_false_question",
-      "question_text": "<p>Consider the following code:</p>\n<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"k\">class</span> <span class=\"nc\">User</span>\n  <span class=\"nb\">attr_accessor</span> <span class=\"ss\">:name</span><span class=\"p\">,</span> <span class=\"ss\">:age</span><span class=\"p\">,</span> <span class=\"ss\">:location</span><span class=\"p\">,</span> <span class=\"ss\">:user_name</span>\n\n  <span class=\"k\">def</span> <span class=\"nf\">initialize</span><span class=\"p\">(</span><span class=\"n\">user_name</span><span class=\"p\">:,</span> <span class=\"nb\">name</span><span class=\"p\">:,</span> <span class=\"n\">age</span><span class=\"p\">:,</span> <span class=\"n\">location</span><span class=\"p\">:)</span>\n    <span class=\"vi\">@user_name</span> <span class=\"o\">=</span> <span class=\"n\">user_name</span>\n    <span class=\"vi\">@name</span> <span class=\"o\">=</span> <span class=\"nb\">name</span>\n    <span class=\"vi\">@location</span> <span class=\"o\">=</span> <span class=\"n\">location</span>\n    <span class=\"vi\">@age</span> <span class=\"o\">=</span> <span class=\"n\">age</span>\n  <span class=\"k\">end</span>\n<span class=\"k\">end</span>\n</code></pre></div>\n<p>The above code snippet is considered <em>metaprogramming</em>.</p>",
+      "question_text": "<p>Consider the following code:</p>\n<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"k\">class</span> <span class=\"nc\">User</span>\n  <span class=\"nb\">attr_accessor</span> <span class=\"ss\">:name</span><span class=\"p\">,</span> <span class=\"ss\">:age</span><span class=\"p\">,</span> <span class=\"ss\">:location</span><span class=\"p\">,</span> <span class=\"ss\">:user_name</span>\n\n  <span class=\"k\">def</span> <span class=\"nf\">initialize</span><span class=\"p\">(</span><span class=\"n\">user_name</span><span class=\"p\">,</span> <span class=\"nb\">name</span><span class=\"p\">,</span> <span class=\"n\">age</span><span class=\"p\">,</span> <span class=\"n\">location</span><span class=\"p\">)</span>\n    <span class=\"vi\">@user_name</span> <span class=\"o\">=</span> <span class=\"n\">user_name</span>\n    <span class=\"vi\">@name</span> <span class=\"o\">=</span> <span class=\"nb\">name</span>\n    <span class=\"vi\">@location</span> <span class=\"o\">=</span> <span class=\"n\">location</span>\n    <span class=\"vi\">@age</span> <span class=\"o\">=</span> <span class=\"n\">age</span>\n  <span class=\"k\">end</span>\n<span class=\"k\">end</span>\n</code></pre></div>\n<p>The above code snippet is considered <em>metaprogramming</em>.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -416,7 +416,7 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/3299/pages/mass-assignment-and-class-initialization\">Mass Assignment and Class Initialization</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 5562,
+          "id": "5562",
           "text": "",
           "comments": "",
           "comments_html": "<p>Perfect! We can map any key in a Hash, regardless of its name, to an attribute\non an object in <code>#initialize</code>.</p>",
@@ -424,7 +424,7 @@
           "html": "<p>Our code is more flexible because it doesn't have to rely on attributes with\nfixed names</p>"
         },
         {
-          "id": 7326,
+          "id": "7326",
           "text": "",
           "comments": "",
           "comments_html": "<p>Yes! We no longer have to rely on a fixed number of arguments to be present in\nany method.</p>",
@@ -432,7 +432,7 @@
           "html": "<p>We can make classes more flexible by adding any number of attributes based on\nour needs at the time without editing <code>#initialize</code></p>"
         },
         {
-          "id": 8743,
+          "id": "8743",
           "text": "",
           "comments": "",
           "comments_html": "<p>Amazing! Using metaprogramming, we can add as many getters and setters as there\nare keys in the Hash that's provided when an object is instantiated.</p>",
@@ -440,7 +440,7 @@
           "html": "<p>We can dynamically add getter and setter methods</p>"
         },
         {
-          "id": 4812,
+          "id": "4812",
           "text": "",
           "comments": "",
           "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
